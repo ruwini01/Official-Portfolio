@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import gonuts from "@/public/Gonuts.png";
-import healthXplore from "@/public/healthXplore.png";
+import healthXplore from "@/public/heathXplore.png";
 
 
 export const links = [
@@ -16,16 +16,12 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Projects",
+    hash: "#projects",
   },
   {
     name: "Contact",

@@ -1,8 +1,11 @@
 import Header from '@/components/header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({ 
+  weight: ['400', '500', '600', '700'], 
+  subsets: ['latin'] 
+})
 
 export const metadata = {
   title: 'Ruwini | Personal Portfolio',
@@ -16,14 +19,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-50 relative h-[5000px]`}>
-        <div className='bg-[#fecaca] absolute top-[10rem] right-[11rem] h-[15.25rem] w-[35.25rem] rounded-full blur-[6rem] sm:w-[68.75rem]'></div>
+      <body className={`${poppins.className} relative h-[5000px] pt-28 sm:pt-20`}>
 
-        <div className='bg-[#ffffff] absolute top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem]'></div>
-
-        <Header/>
+        <Header />
         {children}
-        </body>
+      </body>
     </html>
   )
 }
