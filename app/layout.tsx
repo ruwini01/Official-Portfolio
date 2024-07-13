@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} relative h-[5000px] pt-28 sm:pt-20`}>
+      <body className={`${poppins.className} relative h-[5000px] pt-28 sm:pt-20 lg:mx-48`}>
 
         <Header />
         {children}

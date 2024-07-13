@@ -1,9 +1,21 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import gonuts from "@/public/Gonuts.png";
 import healthXplore from "@/public/heathXplore.png";
+import html from '@/public/html.png'
+import css from '@/public/css-3.png'
+import js from '@/public/js.png'
+import python from '@/public/python.png'
+import java from '@/public/java.png'
+import php from '@/public/web.png'
+import figma from '@/public/figma.png'
+import react from '@/public/physics.png'
+import jquery from '@/public/web (1).png'
+import express from '@/public/express.png'
+import bootstrap from '@/public/bootstrap.png'
+import mysql from '@/public/mysql.png'
+import mongodb from '@/public/mongodb.png'
+
+
 
 
 export const links = [
@@ -29,68 +41,77 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
-  {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
-  },
-] as const;
+
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "HealthXplore",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "Innovative health app prototype using Figma for personalized wellness tracking and management.",
+    tags: ["Figma", "Next.js", "MongoDB", "Express.js", "Prisma"],
     imageUrl: gonuts,
   },
   {
-    title: "rmtDev",
+    title: "E-Commerce website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "E-commerce website for Gonuts With Donuts for discovering and ordering bakery food items effortlessly.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: healthXplore,
-  }
+  },
+  {
+    title: "HealthXplore",
+    description:
+      "Innovative health app prototype using Figma for personalized wellness tracking and management.",
+    tags: ["Figma", "Next.js", "MongoDB", "Express.js", "Prisma"],
+    imageUrl: gonuts,
+  },
+  {
+    title: "E-Commerce website",
+    description:
+      "Full stack e-commerce web site for Gonuts With Donuts for discovering and ordering bakery food items effortlessly.",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    imageUrl: healthXplore,
+  },
 ] as const;
 
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
-] as const;
+
+export const skills = [
+  {
+    title: "Front-End & Back-End",
+    images: [
+      { name: "HTML", src: html },
+      { name: "CSS", src: css },
+      { name: "Java Script", src: js },
+      { name: "Python", src: python },
+      { name: "Java", src: java },
+      { name: "PHP", src: php },
+    ]
+  },
+  {
+    title: "UI/UX",
+    images: [
+      { name: "Figma", src: figma },
+    ]
+  },
+  {
+    title: "Frameworks & Libraries",
+    images: [
+      { name: "React", src: react },
+      { name: "jQuery", src: jquery },
+      { name: "Express", src: express },
+      { name: "Bootstrap", src: bootstrap},
+    ]
+  },
+  {
+    title: "Databases",
+    images: [
+      { name: "MYSQL", src: mysql },
+      { name: "MONGODB", src: mongodb },
+   
+    ]
+  },
+
+  ] as const
+
+
+
