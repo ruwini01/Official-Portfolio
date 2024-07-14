@@ -1,6 +1,7 @@
 import Header from '@/components/header'
 import './globals.css'
 import { Poppins } from 'next/font/google'
+import ActiveSectionContextProvider from '@/context/active-section-context'
 
 const poppins = Poppins({ 
   weight: ['400', '500', '600', '700'], 
@@ -18,11 +19,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.className} relative h-[5000px] pt-28 sm:pt-20 lg:mx-48`}>
+    <html lang="en" className='!scroll-smooth'>
+      <body className={`${poppins.className} relative h-auto pt-28 sm:pt-20 lg:mx-48`}>
 
-        <Header />
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
+        
       </body>
     </html>
   )

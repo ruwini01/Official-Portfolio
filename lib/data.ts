@@ -14,6 +14,7 @@ import express from '@/public/express.png'
 import bootstrap from '@/public/bootstrap.png'
 import mysql from '@/public/mysql.png'
 import mongodb from '@/public/mongodb.png'
+import cousera from '@/public/coursera.png'
 
 
 
@@ -110,6 +111,62 @@ export const skills = [
    
     ]
   },
+
+  ] as const
+
+
+  export const education = [
+    {
+      date: '2022-2026',
+      name: 'BSc.Information Technology',
+      institute: 'University of Jaffna',
+
+    },
+    {
+      date: '2021-2022',
+      name: 'Java Application Development',
+      institute:'National Institue of Business Management (NIBM)'
+    },
+  ] as const
+
+
+
+  export const certificates = [
+    {
+      imageUrl: mongodb,
+      name: 'MongoDB Data medling Path',
+      institute: 'MongoDB',
+      date:'Jun 2024'
+    },
+
+    {
+      imageUrl: cousera,
+      name: 'Meta Front-End Develpoment',
+      institute: 'Coursera',
+      date:'Mar 2024'
+    },
+
+    {
+      imageUrl: cousera,
+      name: 'Meta Programming With Java Script',
+      institute: 'Coursera',
+      date:'Mar 2024'
+    },
+
+    {
+      imageUrl: mongodb,
+      name: 'MongoDB Data medling Path',
+      institute: 'MongoDB',
+      date:'Jun 2024'
+    },
+
+    {
+      imageUrl: cousera,
+      name: 'Meta Front-End Develpoment',
+      institute: 'Coursera',
+      date:'Mar 2024'
+    },
+
 
   ] as const
 

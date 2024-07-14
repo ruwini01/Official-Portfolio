@@ -8,10 +8,15 @@ import instagram from '@/public/instagram.png'
 import facebook from '@/public/facebook.png'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
+  const {ref} = useSectionInView("Home");
+  const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext();
+    
   return (
-    <section className='relative lg:mt-[-2rem] flex flex-col items-center lg:flex-row lg:items-center lg:justify-center lg:h-screen lg:space-x-8'>
+    <section ref = {ref} id='home' className='relative lg:mt-[-2rem] flex flex-col items-center lg:flex-row lg:items-center lg:justify-center lg:h-screen lg:space-x-8 scroll-mt-[100rem]'>
       
       <motion.div 
       initial={{ opacity: 0, scale: 0 }}
@@ -24,7 +29,7 @@ export default function Intro() {
        className='flex items-center justify-center lg:items-center lg:justify-center lg:w-1/2 relative'>
         <div className='absolute w-36 h-36 bg-[#825757] rounded-full blur-[4rem] z-0 top-[4rem] lg:top-[6rem] lg:ml-20' />
         <div className='relative z-10'>
-          <Image src={profile} width={280} height={300} alt='Profile Photo' className='relative z-10 top-[-2rem] lg:ml-20' />
+          <Image src={profile} width={280} height={300} alt='Profile Photo' className='relative z-10 top-[-2rem] lg:ml-10' />
         </div>
       </motion.div>
 
@@ -44,7 +49,7 @@ export default function Intro() {
           <div className='w-6 border-t-2 border-black ml-2 lg:ml-4' />
         </div>
 
-        <h1 className='text-2xl lg:text-4xl sm:text-xs font-bold tracking-widest'>
+        <h1 className='text-2xl lg:text-3xl sm:text-xs font-bold tracking-widest'>
           I’m <span className='text-red-500'>Ruwini</span> Tharanga
         </h1>
         
@@ -54,7 +59,12 @@ export default function Intro() {
 
         <div className='flex mt-6 space-x-6 lg:space-x-10 justify-center lg:pl-10 pt-6'>
           <Link href='/CV.pdf' download={true} target='_blank' className='bg-[#D45A5A] hover:bg-[#D93D3D] w-36 text-white font-medium lg:text-base sm:text-sm py-2 rounded-full flex justify-center items-center outline-none hover:scale-110 active:scale-105'>MY RESUME</Link>
-          <a href='#contact'  className='bg-[#D45A5A] hover:bg-[#D93D3D] w-36 text-white font-medium lg:text-base sm:text-sm py-2 rounded-full flex justify-center items-center outline-none hover:scale-110 active:scale-105'>CONTACT ME</a>
+          <a href='#contact'  className='bg-[#D45A5A] hover:bg-[#D93D3D] w-36 text-white font-medium lg:text-base sm:text-sm py-2 rounded-full flex justify-center items-center outline-none hover:scale-110 active:scale-105' 
+            onClick={()=>{
+              setActiveSection("Contact");
+              setTimeOfLastClick(Date.now());
+            }}
+            >CONTACT ME</a>
         </div>
 
 
