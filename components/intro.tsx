@@ -16,7 +16,7 @@ export default function Intro() {
   const {setActiveSection, setTimeOfLastClick} = useActiveSectionContext();
     
   return (
-    <section ref = {ref} id='home' className='relative lg:mt-[-2rem] flex flex-col items-center lg:flex-row lg:items-center lg:justify-center lg:h-screen lg:space-x-8 scroll-mt-[100rem]'>
+    <section ref={ref} id='home' className='relative lg:mt-[-2rem] flex flex-col items-center lg:flex-row lg:items-center lg:justify-center lg:h-screen space-x-0 lg:space-x-8 scroll-mt-[100rem]'>
       
       <motion.div 
       initial={{ opacity: 0, scale: 0 }}
