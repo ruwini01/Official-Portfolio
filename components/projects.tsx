@@ -4,14 +4,14 @@ import SectionHeading from './section-heading';
 import { projectsData } from '@/lib/data';
 import Image from 'next/image';
 import { useSectionInView } from '@/lib/hooks';
-import { animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
     y: 100,
   },
-  animate: (index) => ({
+  animate: (index: number) => ({
     opacity: 1,
     y: 0,
     transition: {

@@ -4,13 +4,14 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { education, certificates } from '@/lib/data';
 import SectionHeading from './section-heading';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-function chunkArray(array, chunkSize) {
+// Assuming education and certificates data types are defined elsewhere (see previous response)
+
+function chunkArray(array: any[], chunkSize: number): any[][] {
   const result = [];
   for (let i = 0; i < array.length; i += chunkSize) {
     result.push(array.slice(i, i + chunkSize));
@@ -98,3 +99,4 @@ export default function Education() {
     </motion.section>
   );
 }
+
