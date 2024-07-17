@@ -15,6 +15,8 @@ export default function Home() {
       <About/>
       <Education/>
       <SectionDivider/>
+      <Skills/>
+      <SectionDivider/>
 
     </main>
   )
