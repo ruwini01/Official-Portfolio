@@ -12,7 +12,8 @@ export default function Home() {
     <main className="">
       <Intro/>
       <SectionDivider/>
-
+      <About/>
+    
     </main>
   )
 }
