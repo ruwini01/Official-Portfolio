@@ -9,8 +9,6 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// Assuming education and certificates data types are defined elsewhere (see previous response)
-
 function chunkArray(array: any[], chunkSize: number): any[][] {
   const result = [];
   for (let i = 0; i < array.length; i += chunkSize) {
@@ -34,17 +32,17 @@ export default function Education() {
 
   return (
     <motion.section
-      className="flex flex-col items-center justify-center mt-32 lg:mb-32 lg:mt-0 mx-8 lg:mx-28 scroll-mt-24"
+      className="flex flex-col items-center justify-center mt-32 lg:mb-32 lg:mt-0 mx-10 lg:mx-28 scroll-mt-24"
       id="education"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
     >
       <SectionHeading>Education & Certifications</SectionHeading>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 w-full max-w-screen-lg">
         <motion.div
           key="education"
-          className="rounded-lg overflow-hidden shadow-lg p-4"
+          className="rounded-lg overflow-hidden shadow-lg p-4 w-full wider-card"
           variants={leftCardVariants}
           initial="initial"
           whileInView="animate"
@@ -61,7 +59,7 @@ export default function Education() {
 
         <motion.div
           key="certifications"
-          className="rounded-lg overflow-hidden shadow-lg p-4"
+          className="rounded-lg overflow-hidden shadow-lg p-4 w-full wider-card"
           variants={rightCardVariants}
           initial="initial"
           whileInView="animate"
@@ -99,4 +97,3 @@ export default function Education() {
     </motion.section>
   );
 }
-
