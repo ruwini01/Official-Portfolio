@@ -13,7 +13,9 @@ export default function Home() {
       <Intro/>
       <SectionDivider/>
       <About/>
-    
+      <Education/>
+      <SectionDivider/>
+
     </main>
   )
 }
