@@ -19,7 +19,8 @@ export default function Home() {
       <SectionDivider/>
       <Projects/>
       <SectionDivider/>
-
+      <Contact/>
+      <Footer/>
     </main>
   )
 }
