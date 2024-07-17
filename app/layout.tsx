@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='!scroll-smooth'>
-      <body className={`${poppins.className} relative h-auto pt-28 sm:pt-20 lg:mx-48`}>
+      <body className={`${poppins.className} relative h-auto pt-28 sm:pt-20 mx-4 lg:mx-48`}>
 
         <ActiveSectionContextProvider>
           <Header />

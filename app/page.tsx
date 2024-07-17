@@ -10,17 +10,8 @@ import Skills from "@/components/skills";
 export default function Home() {
   return (
     <main className="">
-      <Intro/>
-      <SectionDivider/>
-      <About/>
-      <Education/>
-      <SectionDivider/>
-      <Skills/>
-      <SectionDivider/>
-      <Projects/>
-      <SectionDivider/>
-      <Contact/>
-      <Footer/>
+    
+  
     </main>
   )
 }
