@@ -1,5 +1,5 @@
 'use client';
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsMoon, BsSun } from 'react-icons/bs';
 
 type Theme = "light" | "dark";
@@ -33,10 +33,11 @@ export default function ThemeSwitch() {
                 document.documentElement.classList.add("light");
                 document.documentElement.classList.remove("dark");
             }
-        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-            setTheme("dark");
-            document.documentElement.classList.add("dark");
-            document.documentElement.classList.remove("light");
+        } else {
+            // Default to light mode regardless of OS preference
+            setTheme("light");
+            document.documentElement.classList.add("light");
+            document.documentElement.classList.remove("dark");
         }
     }, []);
 

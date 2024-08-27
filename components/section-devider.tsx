@@ -10,7 +10,7 @@ export default function SectionDivider() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.125 }}
     >
-      <div className="absolute flex space-x-1 bg-white px-2 mt-32 lg:mt-[-8rem]">
+      <div className="absolute flex space-x-1 bg-white dark:dark:bg-gray-900 px-2 mt-32 lg:mt-[-8rem]">
         <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
         <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
         <span className="w-2 h-2 bg-gray-300 rounded-full"></span>
