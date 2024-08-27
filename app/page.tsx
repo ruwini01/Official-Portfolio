@@ -1,4 +1,5 @@
 import About from "@/components/about";
+import Contact from "@/components/contact";
 import Education from "@/components/education";
 import Footer from "@/components/footer";
 import Intro from "@/components/intro";
@@ -18,7 +19,7 @@ export default function Home() {
       <SectionDivider/>
       <Projects/>
       <SectionDivider/>
-      
+      <Contact/>
       <Footer/>
     </main>
   )

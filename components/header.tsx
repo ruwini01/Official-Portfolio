@@ -10,7 +10,7 @@ export default function Header() {
   const {activeSection, setActiveSection, setTimeOfLastClick} =  useActiveSectionContext();
   
   return <header className='z-[999] relative'>
-    <motion.div className= 'fixed top-0 left-0 h-[4.5rem] w-full bg-white bg-opacity-80 backdrop-blur-[0.5rem] sm:h-[4.25rem]'
+    <motion.div className= 'fixed top-0 left-0 h-[4.5rem] w-full bg-white dark:bg-gray-900 dark:bg-opacity-80 bg-opacity-80 backdrop-blur-[0.5rem] sm:h-[4.25rem]'
       initial={{y: -200, opacity:0}}
       animate={{y:0, opacity:1}}>
 
