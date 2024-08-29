@@ -19,7 +19,7 @@ export default function About() {
       >
         <SectionHeading>About Me</SectionHeading>
         <p className="mb-3">
-          I am a dedicated <span className="text-red-500 font-medium">UX/UI designer</span> and <span className="text-red-500 font-medium">developer</span> with a passion for creating seamless and engaging user experiences. With a strong background in both design and development, I excel at transforming complex problems into intuitive, user-friendly solutions. My goal is to continuously innovate and deliver impactful digital products that meet users&apos; needs and exceed their expectations.
+          I am a dedicated <span className="text-red-500 font-medium">UX/UI Designer</span> and <span className="text-red-500 font-medium">Full Stack Developer</span> with a passion for creating seamless and engaging user experiences. With a strong background in both design and development, I excel at transforming complex problems into intuitive, user-friendly solutions. My goal is to continuously innovate and deliver impactful digital products that meet users&apos; needs and exceed their expectations.
         </p>
 
         <div className="flex justify-center mt-8">

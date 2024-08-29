@@ -42,7 +42,7 @@ export default function Education() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 w-full max-w-screen-lg">
         <motion.div
           key="education"
-          className="rounded-lg overflow-hidden shadow-lg p-4 w-full wider-card"
+          className="rounded-lg overflow-hidden shadow-lg dark:shadow-m dark:shadow-[#60606021] p-4 w-full wider-card"
           variants={leftCardVariants}
           initial="initial"
           whileInView="animate"
@@ -59,7 +59,7 @@ export default function Education() {
 
         <motion.div
           key="certifications"
-          className="rounded-lg overflow-hidden shadow-lg p-4 w-full wider-card"
+          className="rounded-lg overflow-hidden dark:shadow-m dark:shadow-[#60606021] shadow-lg p-4 w-full wider-card"
           variants={rightCardVariants}
           initial="initial"
           whileInView="animate"

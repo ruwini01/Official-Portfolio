@@ -25,7 +25,7 @@ export default function Project({ title, images }: ProjectProps) {
             opacity:opacityProgress
         }} 
         >
-        <section className="lg:w-full rounded-lg overflow-hidden shadow-lg m-6">
+        <section className="lg:w-full rounded-lg overflow-hidden shadow-lg m-6 dark:shadow-md dark:shadow-[#ffffff11]">
         <h3 className='tracking-wider m-10 font-medium'>{title}</h3>
         <ul className="flex flex-row mt-4 mb-4 gap-2 mx-auto justify-center lg:space-x-10 sm:space-x-4">
             {images.map((image, index) => (
