@@ -32,7 +32,7 @@ export default function Education() {
 
   return (
     <motion.section
-      className="flex flex-col items-center justify-center mt-32 lg:mb-32 lg:mt-0 mx-10 lg:mx-28 scroll-mt-24"
+      className="flex flex-col items-center justify-center mt-32 lg:mb-32 lg:mt-0 mx-10 scroll-mt-24"
       id="education"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -49,10 +49,19 @@ export default function Education() {
         >
           <p className="tracking-wider font-semibold text-lg mb-8">Education</p>
           {education.map((item, index) => (
-            <div key={index} className="flex flex-col mb-10">
-              <p className="tracking-wider font-light">{item.date}</p>
-              <p className="tracking-wider font-medium">{item.name}</p>
-              <p className="tracking-wider font-light">{item.institute}</p>
+            <div key={index} className="flex flex-row items-center mb-10">
+              <Image
+                src={item.imageUrl}
+                alt={item.institute}
+                width={50}
+                height={50}
+                className="mr-4 rounded-full"
+              />
+              <div className="flex flex-col">
+                <p className="tracking-wider font-light">{item.date}</p>
+                <p className="tracking-wider font-medium">{item.name}</p>
+                <p className="tracking-wider font-light">{item.institute}</p>
+              </div>
             </div>
           ))}
         </motion.div>
@@ -77,7 +86,7 @@ export default function Education() {
                   <div key={itemIndex} className="flex flex-row items-center mb-8 lg:mb-6">
                     <Image
                       src={item.imageUrl}
-                      alt="Institute name"
+                      alt={item.institute}
                       width={50}
                       height={50}
                       className="mr-4 rounded-full"

@@ -17,6 +17,9 @@ import mongodb from '@/public/mongodb.png'
 import cousera from '@/public/coursera.png'
 import snake from '@/public/Snake.png'
 import pong from '@/public/pong.png'
+import uoj from '@/public/uoj.png'
+import nibm from '@/public/nibm.jpeg'
+import spm from '@/public/spm.jpeg'
 
 
 
@@ -126,12 +129,22 @@ export const skills = [
       date: '2022-2026',
       name: 'BSc.Information Technology',
       institute: 'University of Jaffna',
+      imageUrl: uoj
 
     },
     {
       date: '2021-2022',
       name: 'Java Application Development',
-      institute:'National Institue of Business Management (NIBM)'
+      institute:'National Institue of Business Management (NIBM)',
+      imageUrl: nibm
+
+    },
+    {
+      date: '2007-2020',
+      name:'',
+      institute:'St.Paul\'s Girls\' School Milagiriya',
+      imageUrl: spm
+
     },
   ] as const
 
