@@ -15,6 +15,8 @@ import bootstrap from '@/public/bootstrap.png'
 import mysql from '@/public/mysql.png'
 import mongodb from '@/public/mongodb.png'
 import cousera from '@/public/coursera.png'
+import snake from '@/public/Snake.png'
+import pong from '@/public/pong.png'
 
 
 
@@ -49,29 +51,33 @@ export const projectsData = [
     title: "HealthXplore",
     description:
       "Innovative health app prototype using Figma for personalized wellness tracking and management.",
-    tags: ["Figma", "Next.js", "MongoDB", "Express.js", "Prisma"],
-    imageUrl: gonuts,
+    tags: ["Figma"],
+    imageUrl: healthXplore,
+    link_web: "https://www.behance.net/gallery/202767933/HealthXplore"
   },
   {
     title: "E-Commerce website",
     description:
       "E-commerce website for Gonuts With Donuts for discovering and ordering bakery food items effortlessly.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: healthXplore,
-  },
-  {
-    title: "HealthXplore",
-    description:
-      "Innovative health app prototype using Figma for personalized wellness tracking and management.",
-    tags: ["Figma", "Next.js", "MongoDB", "Express.js", "Prisma"],
+    tags: ["React", "Express", "Node.js", "MongoDB"],
     imageUrl: gonuts,
+    link_web: "https://github.com/SGopinath89/IT22342024gonuts.git"
   },
   {
-    title: "E-Commerce website",
+    title: "Snake Game",
     description:
-      "Full stack e-commerce web site for Gonuts With Donuts for discovering and ordering bakery food items effortlessly.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: healthXplore,
+      "Python-based Snake Game offering a fun and interactive way to play the classic game with smooth controls and dynamic gameplay.",
+    tags: ["Python", "Tkinter", "Turtle Graphics"],
+    imageUrl: snake,
+    link_web: "https://github.com/ruwini01/snake-game.git"
+  },
+  {
+    title: "Pong Game",
+    description:
+      "Python-based Pong Game developed using Tkinter and Turtle Graphics, featuring smooth controls and a classic arcade-style gameplay experience.",
+    tags: ["Python", "Tkinter", "Turtle Graphics"],
+    imageUrl: pong,
+    link_web: "https://github.com/ruwini01/pong-game.git"
   },
 ] as const;
 

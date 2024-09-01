@@ -54,11 +54,11 @@ export default function Intro() {
         </h1>
         
         <p className='text-[#808080] dark:text-[#acabab]  font-semibold text-base lg:text-lg mt-1'>
-          Developer | UX/UI Designer | AI Enthusiast
+          Developer | UI/UX Designer | AI Enthusiast
         </p>
 
         <div className='flex mt-6 space-x-6 lg:space-x-10 justify-center lg:pl-10 pt-6'>
-          <Link href='/CV.pdf' download={true} target='_blank' className='bg-[#D45A5A] hover:bg-[#D93D3D] w-36 text-white font-medium text-sm py-2 rounded-full flex justify-center items-center outline-none hover:scale-110 active:scale-105'>MY RESUME</Link>
+          <Link href='/Ruwini Tharanga_CV.pdf' download={true} target='_blank' className='bg-[#D45A5A] hover:bg-[#D93D3D] w-36 text-white font-medium text-sm py-2 rounded-full flex justify-center items-center outline-none hover:scale-110 active:scale-105'>MY RESUME</Link>
           <a href='#contact'  className='bg-[#D45A5A] hover:bg-[#D93D3D] w-36 text-white text-sm py-2 rounded-full flex justify-center font-medium items-center outline-none hover:scale-110 active:scale-105' 
             onClick={()=>{
               setActiveSection("Contact");
