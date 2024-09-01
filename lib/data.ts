@@ -20,6 +20,9 @@ import pong from '@/public/pong.png'
 import uoj from '@/public/uoj.png'
 import nibm from '@/public/nibm.jpeg'
 import spm from '@/public/spm.jpeg'
+import cisco from '@/public/cisco.png'
+import solo from '@/public/solo.png'
+import udemy from '@/public/udemy.jpg'
 
 
 
@@ -173,17 +176,23 @@ export const skills = [
     },
 
     {
-      imageUrl: mongodb,
-      name: 'MongoDB Data medling Path',
-      institute: 'MongoDB',
-      date:'Jun 2024'
+      imageUrl: cisco,
+      name: 'JavaScript Essentials',
+      institute: 'Cisco',
+      date:'Jan 2024'
     },
 
     {
-      imageUrl: cousera,
-      name: 'Meta Front-End Develpoment',
-      institute: 'Coursera',
-      date:'Mar 2024'
+      imageUrl: solo,
+      name: 'Introduction to C',
+      institute: 'sololearn',
+      date:'Jun 2024'
+    },
+    {
+      imageUrl: udemy,
+      name: '100 Days of Code - Python Pro',
+      institute: 'Udemy',
+      date:''
     },
 
 
