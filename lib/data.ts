@@ -56,7 +56,7 @@ export const projectsData = [
   {
     title: "HealthXplore",
     description:
-      "Innovative health app prototype using Figma for personalized wellness tracking and management.",
+      "Innovative health app prototype crafted with Figma, designed for personalized wellness tracking and comprehensive health management.",
     tags: ["Figma"],
     imageUrl: healthXplore,
     link_web: "https://www.behance.net/gallery/202767933/HealthXplore"

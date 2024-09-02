@@ -39,7 +39,7 @@ export default function Projects() {
 
 type ProjectProps = (typeof projectsData)[number] & { index: number };
 
-function Project({ title, description, tags, imageUrl, index }: ProjectProps) {
+function Project({ title, description, tags, imageUrl, index, link_web }: ProjectProps) {
   return (
     <motion.section
       variants={fadeInAnimationVariants}
@@ -60,9 +60,11 @@ function Project({ title, description, tags, imageUrl, index }: ProjectProps) {
             <li key={index} className='px-3 py-1 text-[0.6rem] tracking-wider text-[#D45A5A]/[0.8] rounded-3xl border border-[#D45A5A]/[0.4]'>{tag}</li>
           ))}
         </ul>
-        <button className='bg-[#D45A5A] hover:bg-red-500 text-white text-xs font-semibold py-2 mt-6 px-4 rounded-xl'>
-          View Project
-        </button>
+        <a href={link_web} target="_blank" rel="noopener noreferrer">
+          <button className='bg-[#D45A5A] hover:bg-red-500 text-white text-xs font-semibold py-2 mt-6 px-4 rounded-xl'>
+            View Project
+          </button>
+        </a>
       </div>
     </motion.section>
   );
