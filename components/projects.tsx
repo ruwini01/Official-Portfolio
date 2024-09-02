@@ -26,7 +26,7 @@ export default function Projects() {
   return (
     <section ref={ref} id='projects' className='flex flex-col items-center justify-center mt-32 lg:mt-0 scroll-mt-28 lg:scroll-mt-24 lg:mb-32'>
       <SectionHeading>My Recent Projects</SectionHeading>
-      <motion.div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8'>
+      <motion.div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 w-full'>
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} index={index} />
@@ -48,9 +48,17 @@ function Project({ title, description, tags, imageUrl, index, link_web }: Projec
       viewport={{ once: true }}
       custom={index}
       className='flex flex-col justify-between max-w-80 h-full rounded-lg overflow-hidden shadow-lg dark:shadow-sm dark:shadow-[#4c4c4c] hover:bg-gray-100 dark:hover:bg-[#15162058] scale-90 lg:hover:scale-95'
+      style={{ minHeight: 'auto' }}
     >
       <div className='flex justify-center'>
-        <Image src={imageUrl} width={350} height={300} alt={title} quality={95} className='h-40' />
+        <Image 
+          src={imageUrl} 
+          width={350} 
+          height={300} 
+          alt={title} 
+          quality={95} 
+          className='h-40 object-cover' 
+        />
       </div>
       <div className='px-6 py-4 flex flex-col justify-between flex-grow'>
         <div className='text-center'>
