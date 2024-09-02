@@ -72,7 +72,7 @@ export const projectsData = [
   {
     title: "Snake Game",
     description:
-      "Python-based Snake Game offering a fun and interactive way to play the classic game with smooth controls and dynamic gameplay.",
+      "Python-based Snake Game offering a fun and interactive way to play the classic game with smooth controls.",
     tags: ["Python", "Tkinter", "Turtle Graphics"],
     imageUrl: snake,
     link_web: "https://github.com/ruwini01/snake-game.git"

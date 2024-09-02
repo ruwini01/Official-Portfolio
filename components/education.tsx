@@ -32,7 +32,7 @@ export default function Education() {
 
   return (
     <motion.section
-      className="flex flex-col items-center justify-center mt-32 lg:mb-32 lg:mt-0 mx-10 scroll-mt-24"
+      className="flex flex-col items-center justify-center mt-32 lg:mb-32 lg:mt-0 mx-10 lg:mx-14 scroll-mt-24"
       id="education"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export default function Education() {
           initial="initial"
           whileInView="animate"
         >
-          <p className="tracking-wider font-semibold text-lg mb-4">Certifications</p>
+          <p className="tracking-wider font-semibold text-lg mb-10">Certifications</p>
           <Swiper
             slidesPerView={1}
             spaceBetween={10}
@@ -81,7 +81,7 @@ export default function Education() {
             modules={[Pagination]}
           >
             {chunkedCertificates.map((chunk, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} className='mb-10'>
                 {chunk.map((item, itemIndex) => (
                   <div key={itemIndex} className="flex flex-row items-center mb-8 lg:mb-6">
                     <Image
