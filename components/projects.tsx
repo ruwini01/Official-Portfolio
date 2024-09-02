@@ -39,7 +39,7 @@ export default function Projects() {
 
 type ProjectProps = (typeof projectsData)[number] & { index: number };
 
-function Project({ title, description, tags, imageUrl, index, link_web }: ProjectProps) {
+function Project({ title, description, tags, imageUrl, index }: ProjectProps) {
   return (
     <motion.section
       variants={fadeInAnimationVariants}
@@ -47,28 +47,22 @@ function Project({ title, description, tags, imageUrl, index, link_web }: Projec
       whileInView="animate"
       viewport={{ once: true }}
       custom={index}
-      className='flex flex-col justify-between max-w-80 h-full rounded-lg overflow-hidden shadow-lg dark:shadow-sm dark:shadow-[#4c4c4c] hover:bg-gray-100 dark:hover:bg-[#15162058] scale-90 lg:hover:scale-95'
+      className='max-w-80 rounded-lg overflow-hidden shadow-lg dark:shadow-sm dark:shadow-[#4c4c4c] hover:bg-gray-100 dark:hover:bg-[#15162058] scale-90 lg:hover:scale-95'
     >
       <div className='flex justify-center'>
         <Image src={imageUrl} width={350} height={300} alt={title} quality={95} className='h-40' />
       </div>
-      <div className='px-6 py-4 flex flex-col justify-between flex-grow'>
-        <div className='text-center'>
-          <h3 className='font-medium text-base mb-2'>{title}</h3>
-          <p className='text-gray-700 dark:text-gray-400 text-sm font-light mb-3 leading-relaxed'>{description}</p>
-        </div>
-        <ul className='flex flex-wrap mt-1 gap-2 mx-5 justify-center'>
+      <div className='px-6 py-4 text-center'>
+        <h3 className='font-medium text-lg mb-2'>{title}</h3>
+        <p className='text-gray-700 dark:text-gray-400 text-sm font-light mb-3 leading-relaxed'>{description}</p>
+        <ul className='flex flex-wrap mt-4 gap-2 mx-5 justify-center'>
           {tags.map((tag, index) => (
             <li key={index} className='px-3 py-1 text-[0.6rem] tracking-wider text-[#D45A5A]/[0.8] rounded-3xl border border-[#D45A5A]/[0.4]'>{tag}</li>
           ))}
         </ul>
-        <div className='mt-4 text-center'>
-          <a href={link_web} target="_blank" rel="noopener noreferrer">
-            <button className='bg-[#D45A5A] hover:bg-red-500 text-white text-xs font-semibold py-2 px-4 rounded-xl'>
-              View Project
-            </button>
-          </a>
-        </div>
+        <button className='bg-[#D45A5A] hover:bg-red-500 text-white text-xs font-semibold py-2 mt-6 px-4 rounded-xl'>
+          View Project
+        </button>
       </div>
     </motion.section>
   );
