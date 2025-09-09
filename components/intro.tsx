@@ -54,7 +54,7 @@ export default function Intro() {
         </h1>
         
         <p className='text-[#808080] dark:text-[#acabab]  font-semibold text-base lg:text-lg mt-1'>
-          Developer | UI/UX Designer | AI Enthusiast
+          Developer | AI Enthusiast
         </p>
 
         <div className='flex mt-6 space-x-6 lg:space-x-10 justify-center lg:pl-10 pt-6'>
