@@ -25,6 +25,9 @@ import solo from '@/public/solo.png'
 import udemy from '@/public/udemy.jpg'
 import sb from '@/public/springboot.png'
 import rn from '@/public/rn.png'
+import campuscart from '@/public/campuscart.jpg'
+import codereviewai from '@/public/codereviewai.png'
+import luxstay from '@/public/luxstay.png'
 
 
 
@@ -55,6 +58,30 @@ export const links = [
 
 
 export const projectsData = [
+  {
+    title: "LuxStay",
+    description:
+      "AI-powered hotel booking platform with semantic search, secure Stripe payments, Clerk authentication, and real-time booking features built with clean architecture.",
+    tags: ["React", "Redux", "TypeScript", "Node.js", "Express.js", "MongoDB", "shadcn/ui", "TailwindCSS"],
+    imageUrl: luxstay,
+    link_web: "https://ai-driven-full-stack-hotel-manageme.vercel.app/"
+  },
+  {
+    title: "CodeReviewAI",
+    description:
+      "AI-powered code analysis platform that detects bugs, security issues, and code smells with auto-fix capabilities and quality metrics using three-tier architecture.",
+    tags: ["React", "Python", "Spring Boot", "AI/ML", "Git"],
+    imageUrl: codereviewai,
+    link_web: "https://code-review-ai-six.vercel.app/"
+  },
+  {
+    title: "CampusCart",
+    description:
+      "Mobile marketplace for university students featuring buy/sell items, lost & found reporting, boarding listings, and ID validation using OCR with JWT authentication.",
+    tags: ["React Native", "Python", "Node.js", "Express.js", "MongoDB", "PyTesseract", "JWT"],
+    imageUrl: campuscart,
+    link_web: "https://github.com/ruwini01/CampusCart_Group05.git"
+  },
   {
     title: "HealthXplore",
     description:
