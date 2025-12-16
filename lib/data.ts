@@ -23,6 +23,8 @@ import spm from '@/public/spm.jpeg'
 import cisco from '@/public/cisco.png'
 import solo from '@/public/solo.png'
 import udemy from '@/public/udemy.jpg'
+import sb from '@/public/springboot.png'
+import rn from '@/public/rn.png'
 
 
 
@@ -90,14 +92,20 @@ export const projectsData = [
 
 export const skills = [
   {
-    title: "Front-End & Back-End",
+    title: "Back-End",
+    images: [
+      { name: "Java", src: java },
+      { name: "Java Script", src: js },
+      { name: "Python", src: python },
+    ]
+  },
+  {
+    title: "Front-End",
     images: [
       { name: "HTML", src: html },
       { name: "CSS", src: css },
       { name: "Java Script", src: js },
-      { name: "Python", src: python },
-      { name: "Java", src: java },
-      { name: "PHP", src: php },
+      
     ]
   },
   {
@@ -109,7 +117,9 @@ export const skills = [
   {
     title: "Frameworks & Libraries",
     images: [
+      { name: "SpringBoot", src: sb },
       { name: "React", src: react },
+      { name: "React Native", src: rn },
       { name: "jQuery", src: jquery },
       { name: "Express", src: express },
       { name: "Bootstrap", src: bootstrap},

@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
-  const {ref} = useSectionInView("About");
+  const { ref } = useSectionInView("About");
 
   return (
-    <div className="flex flex-col items-center justify-center"> 
+    <div className="flex flex-col items-center justify-center">
       <motion.section
         ref={ref}
         className="max-w-[22rem] lg:max-w-[60rem] text-center leading-8 sm:mb-40 mt-32 lg:mt-0 scroll-mt-40 lg:scroll-mt-60"
@@ -19,9 +19,13 @@ export default function About() {
       >
         <SectionHeading>About Me</SectionHeading>
         <p className="mb-3">
-          I am a dedicated <span className="text-red-500 font-medium">UI/UX Designer</span> and <span className="text-red-500 font-medium">Full Stack Developer</span> with a passion for creating seamless and engaging user experiences. With a strong background in both design and development, I excel at transforming complex problems into intuitive, user-friendly solutions. My goal is to continuously innovate and deliver impactful digital products that meet users&apos; needs and exceed their expectations.
-        </p>
 
+          I specialize in building the invisible engines that drive powerful digital experiences. With a deep love for <span className="text-red-500 font-medium">Java</span> and <span className="text-red-500 font-medium">JavaScript</span>, I craft scalable architectures, design efficient data flows, and ensure that every interaction is fast, secure, and reliable.
+
+          My work lives at the intersection of performance and precision — from designing APIs that feel effortless to integrating systems that quietly do the heavy lifting. I thrive on solving complex challenges with clean, maintainable code that supports seamless user journeys.
+
+          Technology should feel like magic. I build the spells behind the scenes.
+        </p>
         <div className="flex justify-center mt-8">
           <a
             href="#education"
